@@ -1,0 +1,418 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.text{
+    font-family: "Oswald";
+    font-size: 34px;
+    font-weight: 500;
+}
+.title{
+    color: #0ec17c;
+    font-weight: 400;
+    font-size: 1.25rem;
+
+}
+.des{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.imagebackground{
+    background: rgba(38, 38, 38, 0.8);
+    left: 0;
+    top: 0;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+   background-blend-mode:darken ;
+   font-family: 'Oswald',sans-serif;
+   text-decoration: none;
+   position: absolute;
+}
+.imagebackground .row1 {
+    display: flex;
+   
+}
+.logo{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover,
+.dropdown1:hover .dropbtn {
+    color: #0ec17c;
+    font-weight: bold;
+}
+
+li.dropdown1 {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top:  3px solid #0ec17c;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 3px solid #262626;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #0ec17c;
+}
+
+.dropdown1:hover .dropdown-content {
+    display: block;
+}
+li.dropdown1.active> a{
+    color: #0ec17c;
+}
+a.item.active{
+    color: #0ec17c;
+  
+}
+/* button need a cretive project */
+.need-a-creative-project .project-image {
+    background: rgba(38, 38, 38, 0.8);
+    margin-top: 100px;
+    left: 0;
+    top: 0;
+    height: 420px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+   background-blend-mode:darken ;
+   font-family: 'Oswald',sans-serif;
+   text-decoration: none;
+   position: relative;
+
+}
+
+.button .btn-contatc-now {
+    background-color: #0ec17c;
+    color: #fff;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.button .btn-read-now {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 100px;
+}
+
+.button .btn-read-now:hover {
+    border-color: #0ec17c;
+    background-color: #0ec17c;
+    color: #fff;
+}
+/* the best project */
+.navbar-nav .nav-item .nav-link.active{
+ color: #0ec17c;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    text-decoration: none;
+   }
+
+.button-view-more .btn-view-more:hover{
+    position: relative;
+    border-color: #0ec17c;
+    background-color: #0ec17c;
+    color: #fff;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.button-view-more .btn-view-more{
+    position: relative;
+    border-color: #0ec17c;
+
+    color: #0ec17c;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
+}
+/* follow */
+.follow{
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    margin: 0px;
+    color: #fff;
+    background-image: url(https://raw.githubusercontent.com/uiaextend/jozon/main/01_01_Ozon_One_Page_1/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 0 0;
+    box-shadow: 0 0 0 0 #ffffff;
+    will-change: top;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(14, 193, 124, 0.8);;
+}
+.number1{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: rgba(3, 225, 109, 0);
+    color: #ccc;
+    font-size: 45px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-radius: 100px;
+    font-family: "Oswald";
+}
+.description .row .col-sm .des{
+    margin-top: 15px;
+    color: rgba(38, 38, 38, 0.8);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* carousel */
+.carousel {
+    display: block;
+    width: 100%;
+    padding-top: 23%;
+ }
+/* Images */
+.carousel-image {
+    width: 100%;
+    height: 70%;
+ }
+ /* Positioning Images */
+ .carousel {
+    position: relative;
+ }
+ .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+.carousel-image {
+    display: none;
+ }
+ .carousel-indicator:checked + .carousel-image {
+    display: inline-block;
+ }
+ .carousel-indicator:hover{
+    background: #0ec17c;
+ }
+/* Positioning Indicators */
+.carousel {
+    text-align: center;
+    word-spacing: 12px;
+   
+ }
+
+/* processbar */
+.skill-qualification{
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    margin: 0px;
+    color: #fff;
+    background-color: #262626;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+.skill-qualification .processbar .container {
+    height: 100px;
+    width: 400px;
+  
+    
+}
+ 
+.skill-qualification .processbar .container .progress {
+    margin: 0 auto;
+    font-size: 10px;
+}
+ 
+.container .progress{
+    height: 4px;
+}
+
+.progress .progress-bar92{
+    background-color: #0ec17c;
+    width: 92%;
+  
+}
+.progress .progress-bar95{
+    background-color: #0ec17c;
+    width: 95%;
+   
+}
+ 
+.progress .progress-bar87{
+    background-color: #0ec17c;
+    width: 87%;
+ 
+}
+ 
+.progress .progress-bar98{
+    background-color: #0ec17c;
+    width: 98%;
+ 
+}
+.price-table .grid-price .row2 .col-md-3 .one{
+    margin-left: 20px;
+ 
+    background-color:#f9f9f9 ;
+    padding: 50px;
+}
+.price-table .grid-price .row2 .col-md-3 .one:hover{
+ 
+    transform: scale(1);
+    box-shadow: 0px 0px 30px 10px rgb(38, 38, 38 , 45%);
+    transition: .4s;
+}
+.price-table .grid-price .row2 .col-md-3 .one.active{
+ 
+    padding-top: 2em;
+}
+.pricing-features{
+    list-style: none;
+}
+/* the blog */
+.blog{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 0 #ffffff;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+/* price table  */
+.price-table{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+.price-table .grid-price .row2{
+    text-align: center;
+    align-items: center;
+    margin-left: 300px;
+}
+.btn-buy-now {
+    background-color: transparent;
+    border-color: #0ec17c;
+    color: #0ec17c;
+   
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid ;
+    border-radius: 100px ;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-buy-now.active {
+    width: 100%;
+    color: #fff;
+    background-color: #0ec17c;
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 100px;
+}
+
+.btn-buy-now:hover {
+    border-color: #0ec17c;
+    background-color: #0ec17c;
+    color: #fff;
+}
+/* message */
+.message{
+    background-color: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+/* carousel-massage */
+.text1{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(38, 38, 38, 0.8);
+    text-align: left;
+    padding: 30px;
+    background: #fff;
+    margin-bottom: 40px;
+    font-style: italic;    
+    border-radius: 20px;
+}
+
+ 
+

@@ -1,0 +1,272 @@
+/* Header */
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.preview__header {
+    font-size: 12px;
+    height: 54px;
+    background-color: #262626;
+    z-index: 100;
+    line-height: 54px;
+    margin-bottom: 1px;
+}
+
+.preview__envato-logo {
+    float: left;
+    padding: 0 20px;
+}
+
+.preview__envato-logo a {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    text-indent: -9999px;
+    height: 18px;
+    width: 152px;
+    background: url(https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg);
+    background-size: 152px 18px;
+}
+
+.preview__actions {
+    float: right;
+}
+
+.preview__action--buy {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.e-btn--3d.-color-primary {
+    box-shadow: 0 2px 0 #82b440;
+    position: relative;
+}
+
+.e-btn--3d {
+    background-color: #82b440;
+    color: white;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Thanh Navbar header */
+
+.imagebackground{
+    background: rgba(38, 38, 38, 0.8);
+    left: 0;
+    top: 0;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+   background-blend-mode:darken ;
+   font-family: 'Oswald',sans-serif;
+   text-decoration: none;
+   position: absolute;
+}
+.imagebackground .row {
+    display: flex;
+   
+}
+.logo{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.navbar {
+    margin-left: 550px;
+    margin-top: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    color: #0ec17c;
+    font-weight: bold;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top:  3px solid #0ec17c;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 3px solid #262626;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #0ec17c;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li.dropdown.active> a{
+    color: #0ec17c;
+  
+}
+a.item.active{
+    color: #0ec17c;
+  
+}
+/* description */
+.grid-description {
+    display: grid;
+    grid: 500px / 570px 700px 1000px;
+    grid-gap: 10px;
+    padding: 10px;
+    
+  }
+  .far, .sppb-img-responsive{
+    position: absolute;
+  }
+  .far{
+    z-index: 1;
+  }
+  .sppb-img-responsive{
+    z-index: 2;
+  }
+  /* need a creative project */
+  .creative-project{
+   
+   
+    background: rgba(38, 38, 38, 0.8);
+    margin-top: 100px;
+    left: 0;
+    top: 0;
+    height: 420px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    z-index: 1;
+   background-blend-mode:darken ;
+   font-family: 'Oswald',sans-serif;
+   text-decoration: none;
+   position: relative;
+    
+  }
+  .title .sppb-addon-title{
+    color: #0ec17c;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  .title .sppb-addon-text{
+    font-family: "Oswald";
+    font-size: 34px;
+    color: #fff;
+  }
+  .button .btn-contatc-now{
+    background-color: #0ec17c;
+    padding: 15px 50px 15px 50px;
+    font-size: 16;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Oswald";
+    margin: 15px;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    line-height: 1.25;
+
+  }
+  .button .btn-read-now{
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald";
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 1.25;
+   
+  }
+  .button a{
+    text-decoration: none;
+  }
+  .button a:hover{
+    background-color: #0ec17c;
+  }
+  /* the best project  */
+  .nav-creative-portfolio .dropdown-portfolio.active> a {
+    color: #0ec17c;
+  }
+  .nav-creative-portfolio .dropdown-portfolio> a {
+    color: black;
+  }
+ .dropdown-portfolio a:hover{
+   color: #0ec17c;
+ }
+ .nav-creative-portfolio{
+ margin-left: 500px;
+ }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: left;
+  
+}
+
+.grid-container .col {
+ 
+  display:  inline-block;
+
+  text-align: left;
+  width: 10px;
+  height: 10px;
+}
+ 
