@@ -231,7 +231,7 @@ a.item.active{
 .carousel {
     display: block;
     width: 100%;
-    padding-top: 23%;
+    padding-top: 26%;
  }
 /* Images */
 .carousel-image {
@@ -357,6 +357,7 @@ a.item.active{
     align-items: center;
     margin-left: 300px;
 }
+
 .btn-buy-now {
     background-color: transparent;
     border-color: #0ec17c;
@@ -398,6 +399,7 @@ a.item.active{
     padding-top: 100px;
     padding-bottom: 100px;
     box-shadow: 0 0 0 0 #ffffff;
+   
 }
 /* carousel-massage */
 .text1{
@@ -414,5 +416,4 @@ a.item.active{
     border-radius: 20px;
 }
 
- 
 
