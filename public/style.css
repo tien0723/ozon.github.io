@@ -1,3 +1,10 @@
+html{
+font-family: "Helvetica Neue" ,Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #545454;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -83,6 +90,8 @@ li.dropdown1 {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-top:  3px solid #0ec17c;
+    list-style: none;
+    line-height: 1;
 }
 
 .dropdown-content a {
@@ -91,7 +100,9 @@ li.dropdown1 {
     text-decoration: none;
     display: block;
     text-align: left;
-    border-bottom: 3px solid #262626;
+    border-bottom: 1px solid #262626;
+    list-style: none;
+    line-height: 1;
 }
 
 .dropdown-content a:hover {
@@ -158,7 +169,111 @@ a.item.active{
     background-color: #0ec17c;
     color: #fff;
 }
-/* the best project */
+/* -------------------------------------------------------------who are you-----------------------------------------------------  */
+.who-are-you{
+    margin-top: 900px;
+}
+.who-are-you .container{
+    font-size: 14px; 
+    margin-left: 170px;
+}
+.who-are-you .container .row{
+    padding-left: 50px;
+    
+}
+.who-are-you .container .row{
+    padding-left: 50px;
+    
+}
+.who-are-you .container .row .col-md-6{
+    padding-left: 30px;
+    
+}
+/* -------------------------------------------------------------what are offer-----------------------------------------------------  */
+.what-we-offer{
+    text-align:center ; 
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+.what-we-offer .container.text-center .row .col .image i{
+    font-size: 100px; position: relative;left: 40px; color: #0ec17c;
+}
+.what-we-offer .container.text-center .row .col .image i> .image90{
+    position: relative; right: 90px;
+}
+.what-we-offer .container.text-center .row .col .image i> .image95{
+    position: relative; right: 95px;
+}
+.what-we-offer .container.text-center .row .col .text {
+    font-size: 14px;
+}
+/* -------------------------------------------------------------need a creative project-----------------------------------------------------  */
+.need-a-creative-project{
+    text-align: center; 
+    margin-top: 100px;
+    align-items: center;
+}
+.need-a-creative-project .description1{
+    padding-top: 100px;
+}
+.need-a-creative-project .description1 .container-inner .text{
+    color: #fff;
+}
+/*-----------------------------------------------------------------the best project--------------------------------------------------------- */
+.the-best-project{
+    text-align: center; 
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.the-best-project .row123 .navbar .container-fluid{
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+.the-best-project .row123 .container{
+    width: 100%; 
+    padding-left: 1px; 
+    height: 300px; 
+    position: absolute;
+    float: left;
+    margin-left: 0;
+    display: block;
+}
+.the-best-project .row123 .container .row2{
+    display:flex ; height: 300px;
+}
+
+.the-best-project .row123 .container .row2 .col-md img{
+   width: 379px;
+   height: 300px;
+}
+.the-best-project-item{
+    position: relative;
+    
+}
+.overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0ec17cad;
+    z-index: 77777;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 17px 13px rgb(0 0 0 / 30%);
+    display: none;
+    transition: .3s;
+}
+
+.the-best-project-item:hover .overplay{
+    display: block;
+}
+
+.the-best-project .row123 .button-view-more{
+    margin-top: 670px;
+}
 .navbar-nav .nav-item .nav-link.active{
  color: #0ec17c;
 }
@@ -182,7 +297,6 @@ a.item.active{
 .button-view-more .btn-view-more{
     position: relative;
     border-color: #0ec17c;
-
     color: #0ec17c;
     padding: 15px 50px 15px 50px;
     font-size: 16px;
@@ -192,8 +306,43 @@ a.item.active{
     border-radius: 100px;
     text-decoration: none;
 }
-/* follow */
+/* ----------------------------------------------------------------Cooperation with us -------------------------------------------------*/
+.cooperation{
+    display: flex; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    position: relative;
+    height: 850px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+.cooperation .cooperation-title{
+    margin-right: 50px;
+    margin-left: 200px;
+}
+/* drop image */
+div.strip {
+    margin-right: 30px;
+    display: inline-block;
+    background-image: url(https://raw.githubusercontent.com/uiaextend/jozon/main/01_01_Ozon_One_Page_1/unsplash_jeff-sheldon-264922.jpg);
+    height: 550px;
+    width: 370px;
+    position: relative;
+    background-position: 0 -20px;
+}
+div.strip2 {
+    background-position:  -490px -20px;
+    top: 100px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------follow-------------------------------------------------------------- */
 .follow{
+ 
     padding-top: 100px;
     padding-right: 0px;
     padding-bottom: 70px;
@@ -209,9 +358,26 @@ a.item.active{
     will-change: top;
     z-index: 1;
     position: relative;
-    background-color: rgba(14, 193, 124, 0.8);;
+    background-color: rgba(14, 193, 124, 0.8);
 }
-.number1{
+
+/*-------------------------------------------------------------------- description-------------------------------------------------------------- */
+
+.description{
+    padding-top: 100px; padding-bottom: 50px; box-shadow: 0 0 0 0 #ffffff; padding-left: 200px;
+}
+.description .row2{
+   display: flex;
+}
+
+.description .row2 .col-sm-3{
+    margin-right: 30px;
+    margin-bottom: 50px;
+ }
+ .description .row2 .col-sm-3 .one{
+    display: flex;
+ }
+ .number1{
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -223,36 +389,46 @@ a.item.active{
     border-radius: 100px;
     font-family: "Oswald";
 }
+.description .row2 .col-sm-3 .content{
+    margin-left: 10px;
+ }
+ .description .row2 .col-sm-3 .content .title1{
+    color:#0ec17c ; font-size: 16;font-weight: 400; margin-bottom: 5px;
+ }
+ .description .row2 .col-sm-3 .content .text{
+    font-size: 20px; 
+    color:#262626;
+    margin-bottom: 0px;
+ }
 .description .row .col-sm .des{
     margin-top: 15px;
     color: rgba(38, 38, 38, 0.8);
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
+   
 }
 
-/* carousel */
+/*---------------------------------------------------------------------Our Team--------------------------------------------------------------- */
+ .our-team{
+    padding-top: 100px; padding-bottom: 70px; background-color: #f9f9f9; box-shadow: 0 0 0 0 #ffffff;
+ }
+/* carousel out team */
 .carousel {
     display: block;
     width: 100%;
-    padding-top: 26%;
- }
-/* Images */
-.carousel-image {
-    width: 100%;
-    height: 70%;
- }
- /* Positioning Images */
- .carousel {
+    padding-top: 36%;
     position: relative;
+    text-align: center;
+    word-spacing: 12px;
  }
  .carousel-image {
     position: absolute;
     top: 0;
     left: 0;
- }
-.carousel-image {
     display: none;
+    width: 100%;
+    height: 70%;
  }
  .carousel-indicator:checked + .carousel-image {
     display: inline-block;
@@ -260,14 +436,30 @@ a.item.active{
  .carousel-indicator:hover{
     background: #0ec17c;
  }
-/* Positioning Indicators */
-.carousel {
-    text-align: center;
-    word-spacing: 12px;
-   
- }
 
-/* processbar */
+.carousel .carousel-image .container3{
+    display: flex;
+}
+.carousel .carousel-image .container3 .col-md {
+    margin-right: 30px;
+}
+
+.carousel .carousel-image .container3 .col-md .carousel-image1 .image{
+    width: 100%; height: 300px;
+}
+.carousel .carousel-image .container3 .col-md .carousel-image1 .info{
+    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
+}
+.carousel .carousel-image .container3 .col-md-2 {
+    margin-right: 30px; width: 280px;
+}
+.carousel .carousel-image .container3 .col-md-2 .carousel-image1 .image{
+    width: 100%; height: 300px;
+}
+.carousel .carousel-image .container3 .col-md-2 .carousel-image1 .info{
+    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
+}/*-------------------------------------------------------------------processbar--------------------------------------------------------------- */
+
 .skill-qualification{
     padding-top: 100px;
     padding-right: 0px;
@@ -337,8 +529,8 @@ a.item.active{
     width: 98%;
  
 }
+/*-------------------------------------------------------------------the blog--------------------------------------------------------------- */
 
-/* the blog */
 .blog{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -387,8 +579,8 @@ a.item.active{
     font-size: 16px;
 }
 
+/*----------------------------------------------------------------  price table ------------------------------------------------ */
 
-/* price table  */
 .price-table{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -461,15 +653,6 @@ a.item.active{
 .pricing-features{
     list-style: none;
 }
-/* message */
-.message{
-    background-color: #f9f9f9;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    box-shadow: 0 0 0 0 #ffffff;
-   
-}
- /* price table  */
  .price-table .grid-price .row2 {
     display: flex ;
  }
@@ -492,9 +675,22 @@ a.item.active{
     line-height: 16px;
     margin-bottom: 20px;
  }
-/* Our customers */
+ /*---------------------------------------------------------- Our customer--------------------------------------------------------- */
+
+.message{
+    background-color: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: 0 0 0 0 #ffffff;
+   
+}
 .message .carousel{
     position: relative;
+   
+        display: block;
+        width: 100%;
+        padding-top: 26%;
+  
 }
 .message .carousel .carousel-image .container5{
    display: flex;
@@ -550,29 +746,41 @@ a.item.active{
     font-style: italic;    
     border-radius: 20px;
 }
-/* logo partner */
+/*------------------------------------------------------------------- logo partner-------------------------------------------------------- */
+
 .partner{
     margin-top: 100px; margin-right: 100px;
 }
 .partner .carousel{
     position: relative;
     padding-top: 16%;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 .partner .carousel .carousel-image .container7{
     display: flex;
     margin-left: 200px;
+  
 }
-
+.carousel-indicator:checked + .carousel-image {
+    display: inline-block;
+ }
+ .carousel-indicator:hover{
+    background: #0ec17c;
+ }
 .partner .carousel .carousel-image .container7 .img-partner{
+
+    
     width: 198px;border:2px solid rgba(38, 38, 38, 0.2); border-radius: 10px; height: 100px; margin-right: 30px;
 }
 .partner .carousel .carousel-image .container7 .img-partner .carousel-image0{
     width: 50%; height: 30%; margin-top: 30px;
 }
 
+/* radio-button  */
 
-/* Form  Contact us*/
+
+/*------------------------------------------------------------- Form  Contact us--------------------------------------------------------- */
+/* */
 .contact-us{
     overflow-y: hidden;
     overflow-x: hidden;
@@ -580,7 +788,7 @@ a.item.active{
     padding-bottom: 130px;
     box-shadow: 0 0 0 0 #ffffff;
     position: relative;
-    height: 2500px;
+    height: 1630px;
 }
  /* map contact */
  .contact-us .image-background-contact{
@@ -590,8 +798,25 @@ a.item.active{
      top:100px; 
      width: 100%;  
      box-shadow: 0 0 0 0 #ffffff;
+ 
   }
-  .contact-us .image-background-contact iframe{
+
+.contact-us .image-background-contact .wrap-map{
+    position: relative;
+}
+.contact-us .image-background-contact .wrap-map .overplay1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#262626b8;
+    z-index: 77777;
+    top: 0;
+    left: 0;
+
+    display: block;
+ 
+}
+  .contact-us .image-background-contact .wrap-map iframe{
     height:920px; 
     width:100%;
   }
@@ -652,7 +877,7 @@ input[type=text] {
  
   /* form 1 */
 .form1{
-    position: relative;margin-top: 1000px;
+    position: relative;margin-top: 650px;
 }
 /* form green */
 .form-green{
@@ -680,7 +905,7 @@ input[type=text] {
 .form-black{
     background-color: #262626;
     padding-top: 100px;
-    ;padding-bottom: 100px
+    padding-bottom: 100px
 }
 .form-black .container-inner .text{
     color:white ;
@@ -698,28 +923,8 @@ input[type=text] {
 
 
 
+/*----------------------------------------------------------- go to top  (scroll top)------------------------------------------------------- */
 
-
-
-
-
-
-
-/* drop image */
-div.strip {
-    margin-right: 30px;
-    display: inline-block;
-    background-image: url(https://raw.githubusercontent.com/uiaextend/jozon/main/01_01_Ozon_One_Page_1/unsplash_jeff-sheldon-264922.jpg);
-    height: 550px;
-    width: 370px;
-    position: relative;
-    background-position: 0 -20px;
-}
-div.strip2 {
-    background-position:  -490px -20px;
-    top: 100px;
-}
-/* go to top  (scroll top)*/
 #myBtn {
     display: none;
     position: fixed;
