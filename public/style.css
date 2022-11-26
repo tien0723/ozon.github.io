@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 html{
 font-family: "Helvetica Neue" ,Arial, Helvetica, sans-serif;
 font-size: 16px;
@@ -100,7 +102,7 @@ li.dropdown1 {
     text-decoration: none;
     display: block;
     text-align: left;
-    border-bottom: 1px solid #262626;
+    border-bottom: 1px solid #5454542b;
     list-style: none;
     line-height: 1;
 }
@@ -777,7 +779,48 @@ div.strip2 {
 }
 
 /* radio-button  */
+/* .partner .carousel .carousel-indicator {
+  position: relative;
+    opacity: 1;
+    cursor: pointer;
+  } */
+  
+  /* Create a custom radio button */
+  /* .partner .carousel .checkmark {
+    position: absolute;
+    top: 230px;
+    left: 686px;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .partner .carousel .checkmark.active  {
+    position: absolute;
+    top: 230px;
+    left: 716px;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+    */
+  
+  /* When the radio button is checked, add a blue background */
+/* .partner .carousel input:checked ~ .checkmark {
+    background-color: green;
+  } 
+   */
+ 
+  
 
+   
+ 
+  
+  
+  
 
 /*------------------------------------------------------------- Form  Contact us--------------------------------------------------------- */
 /* */
@@ -901,6 +944,11 @@ input[type=text] {
 .form-green .form-email .col-md-4 button{
     border: 1px solid #0ec17c; background-color: #ffffff; color:#0ec17c; padding: 15px 50px 15px 50px; font-size: 16px; border-radius: 100px;
 }
+.form-green .form-email .col-md-8 input:focus-visible{
+    border-color: #80bdff;
+    outline: none;
+  }
+
 /* form black */
 .form-black{
     background-color: #262626;
@@ -946,4 +994,8 @@ input[type=text] {
     background-color: #555;
   }
 
+
+
+
+ 
 
