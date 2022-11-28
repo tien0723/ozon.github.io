@@ -8,7 +8,7 @@ color: #545454;
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif ;
     font-size: 14px;
 }
 .container-inner{
@@ -19,16 +19,31 @@ body{
     font-size: 34px;
     font-weight: 500;
     margin-bottom: 50px;
+    position: relative;
 }
+.text:after {
+    position: absolute;
+    content: "";
+     display: block;
+     width: 38px;
+     height: 1px;
+     background: #0ec17c;
+     top: 75px;
+     left: 0px;
+  }
 .title{
     color: #0ec17c;
     font-weight: 400;
     font-size: 1.25rem;
-
 }
+
 .des{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+}
+/* background header */
+.container12{
+    width: 100%; height: 100%;
 }
 .imagebackground{
     background: rgba(38, 38, 38, 0.8);
@@ -41,7 +56,6 @@ body{
     backface-visibility: hidden;
     z-index: 1;
    background-blend-mode:darken ;
-   font-family: 'Oswald',sans-serif;
    text-decoration: none;
    position: absolute;
 }
@@ -50,7 +64,7 @@ body{
    
 }
 .logo{
-    margin-left: 100px;
+    margin-left: 114px;
     margin-top: 100px;
 }
 
@@ -61,9 +75,6 @@ ul {
     overflow: hidden;
     
 }
-
-
-
 li a,
 .dropbtn {
     display: inline-block;
@@ -84,6 +95,15 @@ li.dropdown1 {
     display: inline-block;
 }
 
+.navbar1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex; 
+    margin-top: 90px;
+     margin-left: 600px;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -122,6 +142,39 @@ a.item.active{
     color: #0ec17c;
   
 }
+.imagebackground .title {
+    text-align:center ; margin-top: 120px;
+   
+}
+.imagebackground .title h3{
+    font-size: 30px;
+     color:#0ec17c;    
+     font-family: 'Open Sans', sans-serif ;
+    position: relative;
+    display: block;
+}
+.imagebackground .title h1:after{
+   position: absolute;
+   content: "";
+    display: block;
+    width: 138px;
+    height: 3px;
+    position: absolute;
+    background: #0ec17c;
+    top: 100px;
+    left: 700px;
+   
+   
+}
+.imagebackground .title h1{
+    color: #fff; font-size: 60px;
+    text-shadow: 0px 0px 0px rgb(14 193 124 / 0%); 
+    font-family: 'Oswald',sans-serif;
+    font-weight: 500; line-height: 1.2;
+    position: relative;
+   
+}
+
 /* button need a cretive project */
 .need-a-creative-project .project-image {
     background: rgba(38, 38, 38, 0.8);
@@ -209,8 +262,32 @@ a.item.active{
 .what-we-offer .container.text-center .row .col .image i> .image95{
     position: relative; right: 95px;
 }
+.what-we-offer .container-inner .text:after{
+    left: 741px;
+}
+.what-we-offer .container.text-center .row .col .title {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald' ,sans-serif;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.what-we-offer .container.text-center .row .col .text:after {
+
+  top: -30px;
+  left: 130px;
+
+}
 .what-we-offer .container.text-center .row .col .text {
     font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    position: relative;
+    color: #262626; 
+   
 }
 /* -------------------------------------------------------------need a creative project-----------------------------------------------------  */
 .need-a-creative-project{
@@ -224,13 +301,23 @@ a.item.active{
 .need-a-creative-project .description1 .container-inner .text{
     color: #fff;
 }
+.need-a-creative-project .description1 .container-inner .text::after{
+    top:120px;
+    left: 735px;
+    height: 2px;
+    
+}
 /*-----------------------------------------------------------------the best project--------------------------------------------------------- */
 .the-best-project{
     text-align: center; 
     margin-top: 100px;
     padding-bottom: 100px;
 }
-
+.the-best-project .container-inner .text::after{
+    
+  left: 740px;
+height: 2px;
+}
 .the-best-project .row123 .navbar .container-fluid{
     margin-left: 500px;
     margin-bottom: 50px;
@@ -308,6 +395,7 @@ a.item.active{
     border-radius: 100px;
     text-decoration: none;
 }
+
 /* ----------------------------------------------------------------Cooperation with us -------------------------------------------------*/
 .cooperation{
     display: flex; 
@@ -322,6 +410,12 @@ a.item.active{
     margin-right: 50px;
     margin-left: 200px;
 }
+.cooperation .cooperation-title .text::after{
+   top: 160px;
+}
+.cooperation .cooperation-title .button{
+    margin-top: 20px;
+ }
 /* drop image */
 div.strip {
     margin-right: 30px;
@@ -344,7 +438,6 @@ div.strip2 {
 
 /*--------------------------------------------------------------------follow-------------------------------------------------------------- */
 .follow{
- 
     padding-top: 100px;
     padding-right: 0px;
     padding-bottom: 70px;
@@ -361,6 +454,25 @@ div.strip2 {
     z-index: 1;
     position: relative;
     background-color: rgba(14, 193, 124, 0.8);
+}
+.follow .container .row .col-sm-3 .number{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+.follow .container .row .col-sm-3 .text{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+.follow .container .row .col-sm-3 .text:after{
+     background: #fff;
+     top: 30px;
+     height: 2px;
 }
 
 /*-------------------------------------------------------------------- description-------------------------------------------------------------- */
@@ -397,12 +509,16 @@ div.strip2 {
  .description .row2 .col-sm-3 .content .title1{
     color:#0ec17c ; font-size: 16;font-weight: 400; margin-bottom: 5px;
  }
- .description .row2 .col-sm-3 .content .text{
+ .description .row2 .col-sm-3 .content .text2{
     font-size: 20px; 
     color:#262626;
     margin-bottom: 0px;
+    font-family: "Open Sans",sans-serif;
  }
-.description .row .col-sm .des{
+ .description .row2 .col-sm-3 .content .text2::after{
+    display: none;
+ }
+.description .row2 .col-sm-3 .des{
     margin-top: 15px;
     color: rgba(38, 38, 38, 0.8);
     font-size: 14px;
@@ -415,52 +531,65 @@ div.strip2 {
  .our-team{
     padding-top: 100px; padding-bottom: 70px; background-color: #f9f9f9; box-shadow: 0 0 0 0 #ffffff;
  }
-/* carousel out team */
-.carousel {
-    display: block;
-    width: 100%;
-    padding-top: 36%;
-    position: relative;
-    text-align: center;
-    word-spacing: 12px;
+ .our-team .container-inner .text::after{
+    top: 60px;
+    left: 740px;
+    height: 2px;
  }
- .carousel-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    height: 70%;
- }
- .carousel-indicator:checked + .carousel-image {
-    display: inline-block;
- }
- .carousel-indicator:hover{
-    background: #0ec17c;
- }
+ /* slick slider */
 
-.carousel .carousel-image .container3{
+.section .columns .column .slideshow .slide .col-md .carousel-image1 .info{
+    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
+    margin-right: 30px;
+    border-bottom: 2px solid #0ec17c;
+}
+.section .columns .column .slideshow .slide .col-md-2 .carousel-image1 .info{
+    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
+    margin-right: 30px;
+    border-bottom: 2px solid #0ec17c;
+}
+
+/* slick slider */
+
+.section .columns .column .slideshow .slide{
     display: flex;
 }
-.carousel .carousel-image .container3 .col-md {
-    margin-right: 30px;
+.slide img {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    padding-right: 30px;
 }
 
-.carousel .carousel-image .container3 .col-md .carousel-image1 .image{
-    width: 100%; height: 300px;
+ .slick-prev,.slick-next{
+    display: none !important;
 }
-.carousel .carousel-image .container3 .col-md .carousel-image1 .info{
-    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
+.slick-dots li button{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    font-size:0px;
+    padding: 7px;
+    border: none;
+    border-radius: 100%;
+    background: rgba(38, 38, 38, 0.5);
 }
-.carousel .carousel-image .container3 .col-md-2 {
-    margin-right: 30px; width: 280px;
+.slick-dots li button:hover{
+    background: #0ec17c;
+    color: #0ec17c;
 }
-.carousel .carousel-image .container3 .col-md-2 .carousel-image1 .image{
-    width: 100%; height: 300px;
+.slick-dots .slick-active button{
+    background: #0ec17c;
+    border-radius: 100%;
+    color: #0ec17c;
+  
 }
-.carousel .carousel-image .container3 .col-md-2 .carousel-image1 .info{
-    background-color: #fff; height: 120px; text-align: center; padding-top: 20px; 
-}/*-------------------------------------------------------------------processbar--------------------------------------------------------------- */
+
+.slick-dots{
+    display: flex;
+    margin-left: 700px;
+}
+/* -------------------------------------------------------------processbar--------------------------------------------------------------- */
 
 .skill-qualification{
     padding-top: 100px;
@@ -477,7 +606,11 @@ div.strip2 {
     margin-left: 200px;
 }
 .skill-qualification .container .des{
-    color: rgba(255, 255, 255, 0.8);;
+    color: rgba(255, 255, 255, 0.8);
+}
+.skill-qualification .container .text::after{
+    top:60px;
+    height: 1.5px;
 }
 .skill-qualification .processbar{
     margin-right: 200px;
@@ -544,6 +677,11 @@ div.strip2 {
     z-index: 1;
     position: relative;
 }
+.blog .container .text::after{
+    left: 630px;
+    height: 1.5px;
+    top: 60px;
+}
 .blog .grid-blog .row2{
     display: flex;
 }
@@ -559,6 +697,9 @@ div.strip2 {
     font-weight: 400;
     color: #262626;
     margin: 15px 0px 10px 0px;
+}
+.blog .grid-blog .row2 .col-md-3 .one .text::after{
+    display: none;
 }
 .blog .grid-blog .row2 .col-md-3 .one .title{
     font-size: 14px !important;
@@ -579,6 +720,8 @@ div.strip2 {
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Oswald' ;
+    text-transform: uppercase;
 }
 
 /*----------------------------------------------------------------  price table ------------------------------------------------ */
@@ -590,6 +733,11 @@ div.strip2 {
     padding-top: 100px;
     padding-bottom: 70px;
     box-shadow: 0 0 0 0 #ffffff;
+}
+.price-table .text::after{
+    top: 60px;
+    left: 740px;
+    height: 1.5px;
 }
 .price-table .grid-price .row2{
     text-align: center;
@@ -686,55 +834,60 @@ div.strip2 {
     box-shadow: 0 0 0 0 #ffffff;
    
 }
-.message .carousel{
-    position: relative;
-   
-        display: block;
-        width: 100%;
-        padding-top: 26%;
-  
+.message .container-inner .text::after{
+    left: 745px;
+    height: 1.5px;
 }
-.message .carousel .carousel-image .container5{
+
+.message .section .columns .column .slideshow .slide{
    display: flex;
 }
 /* massage1 */
-.message .carousel .carousel-image .container5 .message1 .icon{
+.message .section .columns .column .slideshow .slide .message1 .icon{
     position: absolute; max-width: 100%;  margin-top: 50px;
  }
- .message .carousel .carousel-image .container5 .message1 .icon i{
+ .message .section .columns .column .slideshow .slide .message1 .icon i{
     margin-left: 260px ; font-size: 100px; color: #fff;
  }
- .message .carousel .carousel-image .container5 .message1 .txt{
+ .message .section .columns .column .slideshow .slide .message1 .txt{
      margin-left: 250px; position: relative;
  }
- .message .carousel .carousel-image .container5 .message1 .avatar{
+ .message .section .columns .column .slideshow .slide .message1 .avatar{
     position: relative; display: flex; margin-left: 300px;
  }
- .message .carousel .carousel-image .container5 .message1 .avatar .image-avata{
-    border-radius:100px ;  object-fit: fill; display: block;
+ .message .section .columns .column .slideshow .slide .message1 .avatar .image-avata{
+    border-radius:100px ;  object-fit: fill; display: block;width: 100%; height: 100%; padding-right: 0px;
+    max-width: 20%;
  }
- .message .carousel .carousel-image .container5 .message1 .infor{
+ .message .section .columns .column .slideshow .slide .message1 .infor{
     margin-top: 10px;margin-left: 20px; text-align: left;
  }
  /* message2 */
- .message .carousel .carousel-image .container5 .message2 .icon{
+ .message .section .columns .column .slideshow .slide .message2 .icon{
     position: absolute; max-width: 100%;  margin-top:100px; 
  }
- .message .carousel .carousel-image .container5 .message2 .icon i{
+ .message .section .columns .column .slideshow .slide .message2 .icon i{
     margin-left: 70px ;  font-size: 100px; color: #fff;
  }
- .message .carousel .carousel-image .container5 .message2 .txt{
+ .message .section .columns .column .slideshow .slide .message2 .txt{
     margin-right: 100px; margin-left: 50px; position: relative;
  }
- .message .carousel .carousel-image .container5 .message2 .avatar{
+ .message .section .columns .column .slideshow .slide .message2 .avatar{
     position: relative; display: flex; margin-left: 120px;
  }
- .message .carousel .carousel-image .container5 .message2 .avatar .image-avata{
-    border-radius:100px ;  object-fit: fill; display: block; 
+ .message .section .columns .column .slideshow .slide .message2 .avatar .image-avata{
+    border-radius:100px ;  object-fit: fill; display: block; width: 100%; height: 100%; padding-right: 0px;
+    max-width: 17%; 
  }
- .message .carousel .carousel-image .container5 .message2 .infor{
+ .message .section .columns .column .slideshow .slide .message2 .infor{
     margin-top: 10px;margin-left: 20px; text-align: left;
  }
+ .slide .image-avatar {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    padding-right: 30px;
+}
  .text1{
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
@@ -843,7 +996,9 @@ div.strip2 {
      box-shadow: 0 0 0 0 #ffffff;
  
   }
-
+.contact-us .form .container-inner .text::after{
+    left: 590px;
+}
 .contact-us .image-background-contact .wrap-map{
     position: relative;
 }
@@ -934,6 +1089,14 @@ input[type=text] {
 }
 .form-green .text{
     color: white;
+    margin-bottom: 100px;
+}
+.form-green .text::after{
+  
+     background: #fff;
+    left: 740px;
+    top: 60px;
+    height: 1.5px;
 }
 .form-green .form-email{
     display: flex;
@@ -942,7 +1105,14 @@ input[type=text] {
     border-radius: 100px; border:1px solid rgba(38, 38, 38, 0.2);; margin-left: 130px; background-color: #0ec17c; color: #fff;
 }
 .form-green .form-email .col-md-4 button{
-    border: 1px solid #0ec17c; background-color: #ffffff; color:#0ec17c; padding: 15px 50px 15px 50px; font-size: 16px; border-radius: 100px;
+    border: 1px solid #0ec17c;
+     background-color: #ffffff; 
+     color:#0ec17c;
+      padding: 15px 50px 15px 50px; 
+      font-size: 16px; 
+      border-radius: 100px;
+      font-weight: bold;
+      margin-left: 30px;
 }
 .form-green .form-email .col-md-8 input:focus-visible{
     border-color: #80bdff;
@@ -957,6 +1127,9 @@ input[type=text] {
 }
 .form-black .container-inner .text{
     color:white ;
+}
+.form-black .container-inner .text::after{
+    display: none;
 }
 .form-black .container-inner .link-wrap{
     display: flex; 
