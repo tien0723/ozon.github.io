@@ -4,9 +4,40 @@
   font-size: 12px;
   height: 54px;
   background-color: #262626;
-  z-index: 100;
+  z-index: 2;
   line-height: 54px;
   margin-bottom: 1px;
+  top:0px;
+  left: 0px;
+  width: 1536px;
+ 
+}
+html{
+    background-color: #262626;
+}
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+   
+    background-color: #262626;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  
+}
+
+body::-webkit-scrollbar-track {
+
+    margin-top: 54px;
+    background-color: #fff;
+}
+ 
+body::-webkit-scrollbar-thumb {
+
+  background-color: rgb(196, 196, 196);
+ 
 }
 .preview-header .preview__envato-logo{
    float: left;
@@ -17,16 +48,24 @@
     padding: 0px 20px;
   
  }
+ .preview-header .btn-buynow {
+ padding: 0px 20px;
+ display: inline-block;
+  }
  .preview-header .btn-buynow a{
    text-decoration: none;
-  
+   font-size: 14px;
+   padding: 8px 20px;
+   line-height: 1.5;
+   color: #fff;
+   border-radius: 4px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-color: #82b440;
  }
-.preview-header .preview__envato-logo .header-envato_market{
+.preview-header .preview__envato-logo .header-envato_market img{
    display: inline-block;
    position: relative;
-   top:18px;
    width: 152px;
-   background: url(https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg);
    background-size: 152px 18px;
   text-decoration: none;
   text-indent: -9999px;
@@ -36,7 +75,7 @@
 
 html {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 16px;    
     line-height: 1.5;
     color: #545454;
 }
@@ -45,22 +84,20 @@ header{
     top: 0;
     left: 0;
     width: 100%;                                                                                                                                                                                                                                                                                    
-    padding: 20px 0px;
     transition: all 0.5s ease-in-out;
 }
 header.sticky{
     background: #fff;
-
     color: #262626;
-   
 }
 
 header.sticky li a,
 .dropbtn {
-    display: inline-block;
+    display: block;
     color: #262626;
-    text-align: center;
-    padding: 14px 16px;
+    
+    padding: 10px 16px;
+    
     text-decoration: none;
 
 }
@@ -107,6 +144,7 @@ body {
 .container12 {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .imagebackground {
@@ -130,8 +168,8 @@ body {
 }
 
 .logo {
-    margin-left: 114px;
-    margin-top: 100px;
+    margin-left: 115px;
+    margin-top: 80px;
 }
 
 ul {
@@ -223,7 +261,7 @@ a.item.active {
 }
 
 .imagebackground .title h3 {
-    margin-top: 160px;
+    margin-top: 300px;
     font-size: 30px;
     color: #0ec17c;
     display: block;
@@ -235,8 +273,9 @@ a.item.active {
     width: 138px;
     height: 3px;
     position: absolute;
+    z-index: -1;
     background: #0ec17c;
-    top: 120px;
+    top: 465px;
     left: 700px;
 
 
@@ -305,7 +344,8 @@ a.item.active {
 
 /* -------------------------------------------------------------who are you-----------------------------------------------------  */
 .who-are-you {
-    margin-top: 900px;
+   position: relative;
+   padding-top: 1000px;
 }
 
 .who-are-you .container {
@@ -437,13 +477,9 @@ transform: rotate(45deg);
 
 }
 
-.the-best-project .row123 .navbar .container-fluid {
-    margin-left: 500px;
-    margin-bottom: 50px;
-}
 
-.the-best-project .row123 .container {
-    width: 100%;
+
+.the-best-project .row123 .container6 {
     padding-left: 1px;
     height: 300px;
     position: absolute;
@@ -452,13 +488,13 @@ transform: rotate(45deg);
     display: block;
 }
 
-.the-best-project .row123 .container .row2 {
+.the-best-project .row123 .container6 .row2 {
     display: flex;
     height: 300px;
 }
 
-.the-best-project .row123 .container .row2 .col-md img {
-    width: 379px;
+.the-best-project .row123 .container6 .row2 .col-md img {
+    width: 375px;
     height: 300px;
 }
 
@@ -472,7 +508,7 @@ transform: rotate(45deg);
     width: 100%;
     height: 100%;
     background-color: #0ec17cad;
-    z-index: 77777;
+    z-index: 0;
     top: 0;
     left: 0;
     box-shadow: 1px 1px 17px 13px rgb(0 0 0 / 30%);
@@ -504,33 +540,6 @@ transform: rotate(45deg);
     margin-top: 670px;
 }
 
-.navbar-nav .nav-item .nav-link {
-    font-family: "Oswald";
-    font-size: 20px;
-    color: #262626;
-    margin-left: 10px;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    text-decoration: none;
-    list-style: none;
-    font-weight: normal;
-
-}
-
-.navbar-nav .nav-item .nav-link a {
-    font-size: 30px;
-    border-style: solid;
-    border-color: #e5e5e5;
-    color: #262626;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 15px;
-}
-
-.navbar-nav .nav-item .nav-link.active {
-    color: #0ec17c;
-}
-
 .button-view-more .btn-view-more:hover {
     position: relative;
     border-color: #0ec17c;
@@ -556,7 +565,44 @@ transform: rotate(45deg);
     border: 2px solid;
     border-radius: 100px;
     text-decoration: none;
+    margin-top: 0px;
 }
+
+/* tabs */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-left: 500px;
+    color: #262626;
+    font-family: "Oswald";
+    font-weight: none;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 20px;
+     
+  }
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #0ec17c;
+  
+  }
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+ 
+    border-top: none;
+  }    
+
 
 /* ----------------------------------------------------------------Cooperation with us -------------------------------------------------*/
 .cooperation {

@@ -1,3 +1,4 @@
+  //go to top--------------------------------------------------------------------
   // Get the button
   let mybutton = document.getElementById("myBtn");
 
@@ -17,7 +18,7 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
   }
-
+//slick slider--------------------------------------------------------
   $(".slideshow").slick({
 
       infinite: true,
@@ -40,31 +41,28 @@
       arrows: true,
       autoplaySpeed: 4000,
   });
-
-// processbar
-// Github verson (1 file .html): https://github.com/Soooda/progress_bar_lite/blob/master/index.html
-
-// function increase() {
-//     // Change the variable to modify the speed of the number increasing from 0 to (ms)
-//     let SPEED = 40;
-//     // Retrieve the percentage value
-//     let limit = parseInt(document.getElementById("value1").innerHTML, 10);
-
-// }
-// window.onscroll = function () { scrollFunction1() };
-// function scrollFunction1() {
-//     if (document.body.scrollTop == 10 || document.documentElement.scrollTop == 10) {
-//        increase();
-//     } else{
-//         return 0;
-//     }
-// }
-
-// $(document).ready(function() {
-// 	$(window).scroll(function(event) {
-// 		var pos_body = $('html,body').scrollTop();
-// 		if(pos_body>1000){
-// 			increase();
-// 		}
-// 	});
-// });
+//header----------------------------------------------------------------
+$(document).ready(function(){
+    $(window).scroll(function(){
+     if($(this).scrollTop()){
+         $('header').addClass('sticky');
+     }else{
+         $('header').removeClass('sticky');
+     }
+    })
+ })
+ //Tabs---------------------------------------------------------------
+ function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+   
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
