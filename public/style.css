@@ -169,7 +169,7 @@ body {
 
 .logo {
     margin-left: 115px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 ul {
@@ -208,7 +208,7 @@ li.dropdown1 {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 600px;
 }
 
@@ -479,22 +479,19 @@ transform: rotate(45deg);
 
 
 
-.the-best-project .row123 .container6 {
-    padding-left: 1px;
-    height: 300px;
-    position: absolute;
-    float: left;
-    margin-left: 0;
-    display: block;
+.the-best-project .row123 .container-all {
+    margin-left: -12px;
 }
 
-.the-best-project .row123 .container6 .row2 {
+.the-best-project .row123 .container-all .row2 {
     display: flex;
     height: 300px;
+    width: 100%;
+    max-width: 100%;
 }
 
-.the-best-project .row123 .container6 .row2 .col-md img {
-    width: 375px;
+.the-best-project .row123 .container-all .row2 .col-md img {
+    width: 380px;
     height: 300px;
 }
 
@@ -537,7 +534,7 @@ transform: rotate(45deg);
 }
 
 .the-best-project .row123 .button-view-more {
-    margin-top: 670px;
+    margin-top: 70px;
 }
 
 .button-view-more .btn-view-more:hover {
@@ -894,102 +891,92 @@ div.strip2 {
 
 .skill-qualification .processbar .container .label1 span {
     margin-left: 170px;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 .skill-qualification .processbar .container .label2 span {
     margin-left: 160px;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 .skill-qualification .processbar .container .label3 span {
     margin-left: 200px;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 .skill-qualification .processbar .container .label4 span {
     margin-left: 240px;
-}
-
-
-.skill-qualification .processbar .container .progress {
-    margin: 0 auto;
-    font-size: 10px;
-}
-
-.container .progress {
-    height: 4px;
-}
-
-.progress .progress-bar92 {
-    background-color: #0ec17c;
-    width: 92%;
-
-}
-
-.progress .progress-bar95 {
-    background-color: #0ec17c;
-    width: 95%;
-
-}
-
-.progress .progress-bar87 {
-    background-color: #0ec17c;
-    width: 87%;
-
-}
-
-.progress .progress-bar98 {
-    background-color: #0ec17c;
-    width: 98%;
-
+    animation-name: example;
+    animation-duration: 4s;
+  
 }
 
 /* processbar */
-.chart {
-    background: #fff;
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    padding: 0 5px;
-    display: flex;
-    height: 40px;
-    width: 500px;
-}
-    .chart span {
-        /* You can modify the value below to change the distance between the percentage number and the bar */
-        margin-left: 5px;
-        color: red;
-        font-weight: bolder;
-        margin-top: -80px;
-        font-size: 14px;
-        line-height: 4px;
-    }
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 4px;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 4px;
+    background-color: #04AA6D;
+    border-radius: 8px;
 
-.bar {
-    /* You can modify the total time used for the animation here */
-    animation: load 3s normal forwards;
-    /* 
-    Add a little spice by having a shadow below the bar.
-    Feel free to comment out this line below to have an even LITE version :D 
-    */
-    box-shadow: 0 10px 40px -10px #fff;
+  }
+  #myProgress-92 {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 4px;
+  }
+  
+  #myBar-92 {
+    width: 1%;
+    height: 4px;
+    background-color: #04AA6D;
+    border-radius: 8px;
 
-    border-radius: 100px;
-    background: #0ec17c;
-    height: 30px;
-    width: 0;
-} 
+  }
+  #myProgress-87 {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 4px;
+  }
+  
+  #myBar-87 {
+    width: 1%;
+    height: 4px;
+    background-color: #04AA6D;
+    border-radius: 8px;
+ 
+  }
+  #myProgress-98 {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 4px;
+  }
+  
+  #myBar-98 {
+    width: 1%;
+    height: 4px;
+    background-color: #04AA6D;
+    border-radius: 8px;
 
-@keyframes load {
-    0% {
-        width: 0;
-    }
-    100% {
-        /* You need to change the percentage below to match the value in the corresponding <span> */
-        width: 68%;
-    }
-}
-
-
+  }
+  @keyframes example {
+    0%   {color: yellow; left:0px; top:50px;}
+    25%  {color: blue; left:50px; top:100px;}
+   
+  }
+  
 /*-------------------------------------------------------------------the blog--------------------------------------------------------------- */
 
 .blog {
@@ -1414,11 +1401,10 @@ div.strip2 {
     overflow-y: hidden;
     overflow-x: hidden;
     padding-top: 100px;
-    padding-bottom: 130px;
     box-shadow: 0 0 0 0 #ffffff;
     position: absolute;
-    z-index: 0;
-    height: 1630px;
+    background-color: #ffffff;
+    margin-top: -100px;
     width: 100%;
 }
 
@@ -1441,22 +1427,12 @@ div.strip2 {
     position: relative;
 }
 
-.contact-us .image-background-contact .wrap-map .overplay1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #262626b8;
-    z-index: 77777;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-}
-
 .contact-us .image-background-contact .wrap-map iframe {
     height: 920px;
     width: 100%;
+    box-shadow: 0 0 0 0 #ffffff;
+    /* doi fillter anh */
+    filter: grayscale(1);
 }
 
 .form {

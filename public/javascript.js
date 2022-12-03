@@ -66,3 +66,55 @@ $(document).ready(function(){
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+  // processbar
+  var i = 0;
+  function move() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var pt = document.getElementById("pt").innerText;
+      var elem92 = document.getElementById("myBar-92");
+      var pt92 = document.getElementById("pt-92").innerText;
+      var elem87 = document.getElementById("myBar-87");
+      var pt87 = document.getElementById("pt-87").innerText;
+      var elem98 = document.getElementById("myBar-98");
+      var pt98 = document.getElementById("pt-98").innerText;
+      var width = 1;
+      var width92 =1;
+      var width87 =1;
+      var width98 =1;
+      setInterval(frame, 10);
+      function frame() {
+        if(width+"%"!=pt){
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+      setInterval(frame92, 10);
+      function frame92(){
+        if(width92 + "%" != pt92){
+          width92++;
+          elem92.style.width = width92 + "%";
+        }
+       
+      }
+      setInterval(frame87, 10);
+      function frame87(){
+        if(width87 + "%" != pt87){
+          width87++;
+          elem87.style.width = width87 + "%";
+        }
+       
+      }
+      setInterval(frame98, 10);
+      function frame98(){
+        if(width98 + "%" != pt98){
+          width98++;
+          elem98.style.width = width98 + "%";
+        }
+       
+      }
+    }
+  }
+ 
+
