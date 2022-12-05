@@ -69,26 +69,42 @@ $(document).ready(function(){
   // processbar
   var i = 0;
   function move() {
-    if (i == 0) {
+    if (i == 0) { 
       i = 1;
       var elem = document.getElementById("myBar");
       var pt = document.getElementById("pt").innerText;
+      var elemPT = document.getElementById("pt");
       var elem92 = document.getElementById("myBar-92");
       var pt92 = document.getElementById("pt-92").innerText;
+      var elemPT92 = document.getElementById("pt-92");
       var elem87 = document.getElementById("myBar-87");
       var pt87 = document.getElementById("pt-87").innerText;
+      var elemPT87 = document.getElementById("pt-87");
       var elem98 = document.getElementById("myBar-98");
       var pt98 = document.getElementById("pt-98").innerText;
+      var elemPT98 = document.getElementById("pt-98");
       var width = 1;
       var width92 =1;
       var width87 =1;
       var width98 =1;
+      var marginLeft =1;
+      var marginLeft92 =1;
+      var marginLeft87 =1;
+      var marginLeft98 =1;
       setInterval(frame, 10);
+  
       function frame() {
-        if(width+"%"!=pt){
+        if(width+"%"!=pt ){
           width++;
+          
           elem.style.width = width + "%";
         }
+        if(marginLeft<170){
+          marginLeft++;
+            elemPT.style.marginLeft = marginLeft +"px";
+          }
+         
+        
       }
       setInterval(frame92, 10);
       function frame92(){
@@ -96,7 +112,10 @@ $(document).ready(function(){
           width92++;
           elem92.style.width = width92 + "%";
         }
-       
+        if(marginLeft92<160){
+          marginLeft92++;
+            elemPT92.style.marginLeft = marginLeft92 +"px";
+          }
       }
       setInterval(frame87, 10);
       function frame87(){
@@ -104,7 +123,10 @@ $(document).ready(function(){
           width87++;
           elem87.style.width = width87 + "%";
         }
-       
+        if(marginLeft87<200){
+          marginLeft87++
+            elemPT87.style.marginLeft = marginLeft87 +"px";
+          }
       }
       setInterval(frame98, 10);
       function frame98(){
@@ -112,7 +134,10 @@ $(document).ready(function(){
           width98++;
           elem98.style.width = width98 + "%";
         }
-       
+        if(marginLeft98<240){
+          marginLeft98++
+            elemPT98.style.marginLeft = marginLeft98 +"px";
+          }
       }
     }
   }

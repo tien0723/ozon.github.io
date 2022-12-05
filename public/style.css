@@ -9,7 +9,6 @@
   margin-bottom: 1px;
   top:0px;
   left: 0px;
-  width: 1536px;
  
 }
 html{
@@ -83,7 +82,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;                                                                                                                                                                                                                                                                                    
+    width: 100%;      
+    height: 150px;                                                                                                                                                                                                                                                                              
     transition: all 0.5s ease-in-out;
 }
 header.sticky{
@@ -144,7 +144,7 @@ body {
 .container12 {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
 }
 
 .imagebackground {
@@ -208,10 +208,17 @@ li.dropdown1 {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    margin-top: 30px;
-    margin-left: 600px;
+ 
+    position: fixed;
+   left: 50%;
+   top: 11%;
 }
-
+.navbar-mobile{
+    display: none;
+}
+.fas.fa-bars{
+    display: none;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -346,6 +353,9 @@ a.item.active {
 .who-are-you {
    position: relative;
    padding-top: 1000px;
+   background-color: #fff;
+    
+   padding-bottom: 100px;
 }
 
 .who-are-you .container {
@@ -364,18 +374,18 @@ a.item.active {
 }
 
 .who-are-you .container .row .col-md-6 {
-    padding-left: 30px;
-    font-style: italic;
-    color: #262626b3;
+   text-align: left;
+    font-size: 14px;
+    color: #262626;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* -------------------------------------------------------------what are offer-----------------------------------------------------  */
 .what-we-offer {
     text-align: center;
-    margin-top: 100px;
+ 
     padding-top: 100px;
-    padding-bottom: 70px;
+
     background-color: #f9f9f9;
     box-shadow: 0 0 0 0 #ffffff;
 }
@@ -419,25 +429,27 @@ transform: rotate(45deg);
 .what-we-offer .container.text-center .row .col .text:after {
 
     top: -30px;
-    left: 130px;
+    left: 40%;
 
 }
 
 .what-we-offer .container.text-center .row .col .text {
+    width: 80%;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     margin-bottom: 50px;
     position: relative;
     color: #262626;
-
+    left: 15%;
 }
 
 /* -------------------------------------------------------------need a creative project-----------------------------------------------------  */
 .need-a-creative-project {
     text-align: center;
-    margin-top: 100px;
+  margin-top: -100px;
     align-items: center;
+    background-color: #fff;
 }
 
 .need-a-creative-project .description1 {
@@ -446,6 +458,9 @@ transform: rotate(45deg);
 
 .need-a-creative-project .description1 .container-inner .text {
     color: #fff;
+    width: 50%;
+    left: 25%;
+
 }
 
 .need-a-creative-project .description1 .container-inner .title {
@@ -454,7 +469,7 @@ transform: rotate(45deg);
 
 .need-a-creative-project .description1 .container-inner .text::after {
     top: 120px;
-    left: 735px;
+    left: 48%;
     height: 2px;
 
 }
@@ -462,8 +477,9 @@ transform: rotate(45deg);
 /*-----------------------------------------------------------------the best project--------------------------------------------------------- */
 .the-best-project {
     text-align: center;
-    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #fff;
 }
 
 .the-best-project .container-inner .text::after {
@@ -572,7 +588,6 @@ transform: rotate(45deg);
     margin-left: 500px;
     color: #262626;
     font-family: "Oswald";
-    font-weight: none;
   }
   /* Style the buttons inside the tab */
 .tab button {
@@ -693,6 +708,7 @@ div.strip2 {
     padding-bottom: 50px;
     box-shadow: 0 0 0 0 #ffffff;
     padding-left: 200px;
+    background-color: #fff;
 }
 
 .description .row2 {
@@ -889,31 +905,6 @@ div.strip2 {
     width: 400px;
 }
 
-.skill-qualification .processbar .container .label1 span {
-    margin-left: 170px;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-.skill-qualification .processbar .container .label2 span {
-    margin-left: 160px;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-.skill-qualification .processbar .container .label3 span {
-    margin-left: 200px;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-.skill-qualification .processbar .container .label4 span {
-    margin-left: 240px;
-    animation-name: example;
-    animation-duration: 4s;
-  
-}
-
 /* processbar */
 #myProgress {
     width: 100%;
@@ -929,6 +920,7 @@ div.strip2 {
     border-radius: 8px;
 
   }
+  
   #myProgress-92 {
     width: 100%;
     background-color: #ddd;
@@ -971,17 +963,14 @@ div.strip2 {
     border-radius: 8px;
 
   }
-  @keyframes example {
-    0%   {color: yellow; left:0px; top:50px;}
-    25%  {color: blue; left:50px; top:100px;}
-   
-  }
-  
+
+ 
+
 /*-------------------------------------------------------------------the blog--------------------------------------------------------------- */
 
 .blog {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 0 0 0 0 #ffffff;
@@ -1025,6 +1014,7 @@ div.strip2 {
     font-weight: 400;
     text-align: left;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .blog .grid-blog .row2 .col-md-3 .one .des {
@@ -1049,12 +1039,13 @@ div.strip2 {
 /*----------------------------------------------------------------  price table ------------------------------------------------ */
 
 .price-table {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 70px;
     box-shadow: 0 0 0 0 #ffffff;
+    background-color: #fff;
 }
 
 .price-table .text::after {
@@ -1363,8 +1354,9 @@ div.strip2 {
 
 /*------------------------------------------------------------------- logo partner-------------------------------------------------------- */
 .partner {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
 }
 
 .partner .section {
@@ -1629,3 +1621,171 @@ input[type=text] {
 #myBtn:hover {
     background-color: #555;
 }
+/* mobile and table width< 1024*/
+@media only screen and (max-width: 63.9375em){
+
+   .container12{
+    overflow: scroll;
+   }
+   header
+   .logo{
+    position: relative;
+    top: 15%;
+    left: 70%;
+   }
+   header.sticky{
+    background: #fff;
+    color: #0ec17c;
+}
+   .fas.fa-bars{
+    display: block;
+    color: #04AA6D;
+    font-size: 2em;
+   position: absolute;
+   top: 55%;
+   left: 5%;
+   }
+   .navbar1{
+    display: none;
+   }
+   .imagebackground .title h1:after {
+    left: 40%;
+    top: 50%;
+   }
+   
+
+.imagebackground .title h1 {
+    font-size: 16px;
+}
+.navbar-mobile{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+  background-color: #fff;
+}
+.navbar-mobile .logo{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+li.dropdown1>a{
+    color: #262626;
+}
+li.dropdown1{
+    display: block;
+}
+li.dropdown1.active>a{
+    margin-top: 200px;
+}
+.navbar-mobile .contact-logo{
+    display: flex;
+
+}
+.navbar-mobile .contact-logo .col-md-2{
+   padding: 10px 0px;
+    background-color: #04AA6D;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navbar-mobile .des{
+    width: 70%;
+    margin-left: 40px;
+ }
+.navbar-mobile .des a{
+    font-size: 14px;
+    color: #262626;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none;
+
+ }
+   /* .who-are-we */
+   .who-are-you .container{
+    margin-left: 0px;
+   }
+   .who-are-you .container .row{
+    padding-left: 0px;
+    display: block;
+   }
+   .who-are-you .container .row .col-md-4{
+   width: 100%;
+   }
+   .who-are-you .container .row .col-md-6{
+    margin-top: 1em;
+    width: 100%;
+    }
+    /* what-we-offer */
+    .mobile-hidden{
+        display: none;
+    }
+    .what-we-offer .container.text-center .row .col .image {
+        margin-left: 100px;
+    }
+    .what-we-offer .container.text-center .row .col .text:after {
+        top: -30px;
+        left: 30%;
+    }
+    .what-we-offer .container.text-center .row .col .text {
+       width: 95%;
+       text-align: left;
+    }
+    /* need-a-creative-project */
+    .need-a-creative-project .description1 .container-inner .text {
+        width: 90%;
+        left: 5%;
+    }
+    /* the-best-project */
+    .tab {
+        margin-left: 15%;
+    }
+    .the-best-project .row123 .container-all .row2{
+        height: 150px;
+    }
+    .the-best-project .row123 .container-all .row2 .col-md{
+        width: 25%;
+       
+    }
+    .the-best-project .row123 .container-all .row2 .col-md img{
+        height: 150px;
+    }
+    /* cooperation with us*/
+    .cooperation{
+        display: none;
+    }
+    /* follow */
+    .follow{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .follow .container .row .col-sm-3{
+        padding-right: 225px;
+    }
+   /* description */
+   .description{
+    padding-left: 2em;
+
+   }
+   .description .row2 .col-md{
+    width: 50%;
+   }
+   /* our-team */
+   
+}
+/* mobile width< 740 */
+@media only screen and (max-width: 46.1875em){
+
+}
+/* table  width < 1024*/
+@media only screen and (min-width: 46.25em) and (max-width: 46.1875em){
+  
+    
+}
+
