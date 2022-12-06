@@ -74,15 +74,19 @@ $(document).ready(function(){
       var elem = document.getElementById("myBar");
       var pt = document.getElementById("pt").innerText;
       var elemPT = document.getElementById("pt");
+      var elemTT = document.getElementById("TT");
       var elem92 = document.getElementById("myBar-92");
       var pt92 = document.getElementById("pt-92").innerText;
       var elemPT92 = document.getElementById("pt-92");
+      var elemTT92 = document.getElementById("TT-92");
       var elem87 = document.getElementById("myBar-87");
       var pt87 = document.getElementById("pt-87").innerText;
       var elemPT87 = document.getElementById("pt-87");
+      var elemTT87 = document.getElementById("TT-87");
       var elem98 = document.getElementById("myBar-98");
       var pt98 = document.getElementById("pt-98").innerText;
       var elemPT98 = document.getElementById("pt-98");
+      var elemTT98 = document.getElementById("TT-98");
       var width = 1;
       var width92 =1;
       var width87 =1;
@@ -91,20 +95,22 @@ $(document).ready(function(){
       var marginLeft92 =1;
       var marginLeft87 =1;
       var marginLeft98 =1;
+      var marginRight= 1;
+      var marginRight92= 1;
+      var marginRight87= 1;
+      var marginRight98= 1;
       setInterval(frame, 10);
   
       function frame() {
         if(width+"%"!=pt ){
           width++;
-          
           elem.style.width = width + "%";
         }
-        if(marginLeft<170){
+        if(marginLeft<69 ){
           marginLeft++;
-            elemPT.style.marginLeft = marginLeft +"px";
+            elemPT.style.marginLeft = marginLeft +"%";
           }
          
-        
       }
       setInterval(frame92, 10);
       function frame92(){
@@ -112,9 +118,9 @@ $(document).ready(function(){
           width92++;
           elem92.style.width = width92 + "%";
         }
-        if(marginLeft92<160){
+        if(marginLeft92<60){
           marginLeft92++;
-            elemPT92.style.marginLeft = marginLeft92 +"px";
+            elemPT92.style.marginLeft = marginLeft92 +"%";
           }
       }
       setInterval(frame87, 10);
@@ -123,9 +129,9 @@ $(document).ready(function(){
           width87++;
           elem87.style.width = width87 + "%";
         }
-        if(marginLeft87<200){
-          marginLeft87++
-            elemPT87.style.marginLeft = marginLeft87 +"px";
+        if(marginLeft87<66){
+          marginLeft87++;
+            elemPT87.style.marginLeft = marginLeft87 +"%";
           }
       }
       setInterval(frame98, 10);
@@ -134,12 +140,13 @@ $(document).ready(function(){
           width98++;
           elem98.style.width = width98 + "%";
         }
-        if(marginLeft98<240){
-          marginLeft98++
-            elemPT98.style.marginLeft = marginLeft98 +"px";
+        if(marginLeft98<77){
+          marginLeft98++;
+            elemPT98.style.marginLeft = marginLeft98 +"%";
           }
+        
       }
-    }
+     }
   }
  
 
