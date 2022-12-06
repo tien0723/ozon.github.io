@@ -291,6 +291,7 @@ a.item.active {
 .imagebackground .title {
     content: "";
     position: absolute;
+    z-index: -1;
     top: 29%;
     left: 19%;
     animation: ani ease 2s ;
