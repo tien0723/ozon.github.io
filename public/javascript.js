@@ -44,8 +44,11 @@
 //header----------------------------------------------------------------
 $(document).ready(function(){
     $(window).scroll(function(){
+      console.log($(this).scrollTop())
      if($(this).scrollTop()){
          $('header').addClass('sticky');
+        //  $('header').css("background", "#fff");
+         console.log("asdasdasda")
      }else{
          $('header').removeClass('sticky');
      }
